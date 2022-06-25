@@ -1,7 +1,5 @@
 library(ggplot2)
 
-
-
 pasteles <- read.csv("base_pasteles.csv", na.strings = "#N/A")
 
 
@@ -20,3 +18,5 @@ ggplot(pasteles, aes(x = pos_hora, y = medico_id, colour = medico_metodo)) +
   theme(plot.title = element_text(hjust = 0.5)) +
   coord_polar() +
   facet_wrap(~paciente_id)
+
+  
